@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>TurbineWorks</title>
-        <link rel="icon" type="image/x-icon" href="resources/turb-favicon.png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo"><img src="resources/turb-favicon.png">TurbineWorks</div>
-            <div id="headerlinks">
-                <img src="resources/account_circle_FILL1_wght400_GRAD0_opsz48.svg">
-                <img src="resources/shopping_cart_checkout_FILL1_wght400_GRAD0_opsz40.svg">
-            </div>
-        </div>
-        <div id="sectionone">
-            <div id="bgi"></div>
-            <div style="position: absolute; top: 200px; left: 5%; z-index: 1;
-            background-color: transparent; margin-right: 5%;">
-                <div style="font-size: 48px; font-weight: 900; color: #f9faf8;">This is<br>TurbineWorks</div>
-                <p style="font-size: 20px; font-weight: 500; color: #e5e7eb;">
-                    A one stop space for hobbyists in the field to explore, share their work and
-                    meet enthusiasts. A community marketplace is on its way, promising to
-                    completing the experience.
-                </p>
-                <button id="signupbtn1">Sign Up</button>
-            </div>
-        </div>
-        <p style="text-align:center;color:#1f2937;font-size:36px;font-weight:900;
-        padding: 0px 10px 0px;">
-            Products coming out soon ...
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TurbineWorks</title>
+    <link rel="icon" type="image/x-icon" href="resources/turb-favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <div class="logo"></div>
+        <div class="logo-title">TurbineWorks</div>
+      </div>
+      <div>
+        <div class="icon account"></div>
+        <div class="icon cart"></div>
+      </div>
+    </div>
+
+    <div class="section-one">
+      <div class="background-slide"></div>
+      <div class="hero-wrapper">
+        <div class="hero-text">This is a Community</div>
+        <p class="subhero-text">
+          A one stop space for hobbyists in the field to explore, share their
+          work and meet enthusiasts. A community marketplace/tradestop is on its
+          way, that promises a more complete experience.
         </p>
-        <div id="itemsonlandingpage">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div id="inspquote" style="font-style: italic; font-weight:lighter;">
-            This is supposed to be an inspiring quote from one of our users.
-            Maybe it's just filling up space, or maybe you'll read it. All I know
-            is that it looks nice.
-            <p style="text-align: right; font-style: normal;
-            font-size: 25px; font-weight: 900; padding-right: 60px;">
-                -Thor, God of Thunder
-            </p>
-        </div>
-        <div id="calltoaction">
-            <div id="CTAtext">
-                <div style="font-size:24px;font-weight:900">Call to action! It's time!</div>
-                <div style="font-size: 16px; display: inline;">Sign up for our product by clicking that button right over there!</div>
+        <button class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="section-two">
+      <p>Products coming out soon ...</p>
+      <div class="products-wrapper">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+
+    <div class="section-three">
+      <div class="quote">
+        This is supposed to be an inspiring quote from one of our users. Maybe
+        it's just filling up space, or maybe you'll read it. All I know is that
+        it looks nice.
+        <p>- Groot (Verified User)</p>
+      </div>
+      <div class="calltoaction">
+        <div>Call to action! It's time!</div>
+        <div class="wrapper">
+          <div>
+            <div>
+              Sign up for our product by clicking that button right over there!
             </div>
-            <button id="signupbtn2">Sign up</button>
+          </div>
+          <button class="signupbtn">Sign up</button>
         </div>
-        <div id="footer">
-            <a href="https://theodinproject.com">The Odin Project</a>&ensp;
-            <a href="https://github.com/vkilng/micro-turbines" id="githubLogo">
-                <img src="resources/GitHub-Mark-Light-32px.png" alt="GitHub"
-                style="position: relative; top: 10px;">
-            </a>
-        </div>
-        <script src="script.js"></script>
-    </body>
+      </div>
+    </div>
+
+    <footer>
+      A Landing Page project by
+      <a href="https://github.com/vkilng/micro-turbines"> vkilng </a>
+      <a href="https://github.com/vkilng/micro-turbines">
+        <img
+          src="resources/GitHub-Mark-Light-32px.png"
+          alt="GitHub Page"
+        />
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

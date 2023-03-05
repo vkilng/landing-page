@@ -1,120 +1,230 @@
-body, html{
-  margin: 0; padding: 0;
-  font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1vw + 2vh);
 }
-#header{
+
+.logo {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  background-image: url(./resources/Logo.jpg);
+  background-position: 70%;
+  background-size: cover;
+}
+.logo-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.icon {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.icon.account {
+  background-image: url(./resources/AccountIcon.svg);
+}
+.icon.cart {
+  background-image: url(./resources/ShoppingCartIcon.svg);
+  margin-right: 3vw;
+}
+.header {
+  padding: 3vw 4vw;
+  background-color: #27272a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1%;
-  width: 100%; height: 120px;
-  font-size: 24px;
-  color: #f9faf8;
-  background-color: #1F2937;
+  gap: 2vw;
 }
-#logo{
-  display: flex;
-  gap: 10px; line-height: 50px;
-  height: 50px;
-  margin-left: 5%;
+
+.section-one {
+  background-color: #27272a;
+  height: 70vh;
+  position: relative;
 }
-#headerlinks{
-  display: flex;
-  flex-basis: 100px; flex-shrink: 3;
-  align-items: center; justify-content: space-between;
-  margin-right: 7%;
-}
-#headerlinks span{
-  width: 33px; height: 33px;
-  border: solid 2px white; border-radius: 50%;
-  padding-left: 2px; padding-top: 2px;
-  background-position: 50% 52%; background-size: cover;
-  cursor: pointer; color: white;
-}
-#sectionone{
-  background-color: #1F2937;
-  height: 450px;
-}
-#bgi{
+.background-slide {
   z-index: -1;
-  background: url("resources/img1_.jpg") center center;
+  background: url("./resources/img1_.jpg") center center;
   background-size: cover;
-  opacity: .2;
+  opacity: 0.2;
   width: 100%;
   height: 100%;
 }
-#signupbtn1,#signupbtn2{
-  background-color: transparent;
+.hero-wrapper {
+  position: absolute;
+  top: 0;
+  padding: 10vh 4vw;
+  color: white;
+  line-height: 1.5;
+}
+.hero-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.signupbtn {
+  padding: 1.2vw 3vw;
+  background-color: #3882f6;
   color: #e5e7eb;
-  width: 150px; height: 50px;
-  font-size: 18px; font-weight: 700;
-  border: solid 2px #e5e7eb; border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: solid 2px transparent;
+  border-radius: 1vw;
   cursor: pointer;
 }
-@media (hover: hover) and (pointer: fine) {
-  #signupbtn1:hover {
-    border: none;
-    background-color: #3882f6;
-  }
+.signupbtn:hover {
+  border: solid 2px #e5e7eb;
+  background-color: transparent;
 }
-#itemsonlandingpage{
-  display: flex;
-  padding-left: 15%; padding-right: 15%;
-  align-items: center; justify-content: center;
-  gap: 7%; 
+
+.section-two {
+  margin: 10vw 4vw;
 }
-#itemsonlandingpage span{
-  width: 150px; height: 150px;
-  border: solid 3px #3882f6;
-  border-radius: 10px;
-  background-image: url("resources/inventory_3.png");
-  background-position: center; background-size: cover;
-}
-#itemsonlandingpage span::after{
-  content: "subtext under image";
-  position: relative; top: 160px;
-}
-#inspquote{
-  margin-top: 150px;
-  padding-left: 20%; padding-right: 20%;
-  padding-top: 10%; padding-bottom: 10%;
-  background-color: #e5e7eb;
-  font-size: 36px; color: #1f2937;
-}
-#calltoaction{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  margin: 5%;
-  padding: 20px 5% 20px;
-  border-radius: 10px;
-  color: #f9faf8;
-  background-color: #3882f6;
-}
-#CTAtext{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-@media (hover: hover) and (pointer: fine) {
-  #signupbtn2:hover{
-    background-color: #1f2937;
-  }
-}
-#footer{
-  background-color: #1f2937; color: #e5e7eb;
-  width: 100%; height: 50px;
-  margin-bottom: 1%;
+.section-two > p {
+  font-size: 1.2rem;
+  font-weight: 500;
   text-align: center;
-  padding-top: 5px; padding-bottom: 5px;
 }
-#footer a{
-  color: #e5e7eb;
+.products-wrapper {
+  width: 80vw;
+  padding: 2vw 4vw;
+  overflow-x: scroll;
+  display: flex;
+  gap: 4vw;
 }
-/*
+.products-wrapper .item {
+  flex-shrink: 0;
+  width: 15vw;
+  height: 10vw;
+  border: solid 2px #27272a;
+  border-radius: 2vw;
+  background-image: url(./resources/InventoryIcon.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.quote {
+  padding: 5vw;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-style: italic;
+  background-color: lightgray;
+  line-height: 1.5;
+  word-spacing: 1.5;
+}
+.quote > p {
+  text-align: end;
+  font-style: normal;
+  font-weight: 600;
+  color: #555;
+}
+.calltoaction {
+  margin: 3vw;
+  border-radius: 2vw;
+  background-color: #3882f6;
+  color: white;
+  padding: 4vw;
+}
+.calltoaction > div:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.calltoaction .wrapper {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.calltoaction button {
+  flex-shrink: 0;
+  background-color: white;
+  color: #3882f6;
+  border: solid 2px white;
+}
+.calltoaction button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+footer {
+  background-color: #27272a;
+  color: white;
+  padding: 1.5vw 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+  font-size: 0.8rem;
+}
+footer a {
+  color: white;
+}
+footer img:hover {
+  animation: wiggly 2s infinite;
+}
+@keyframes wiggly {
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(1080deg) scale(1);
+  }
+}
+
+@media screen and (max-width: 765px) {
+	.header > div {
+		gap: 3vw;
+	}
+	.logo-title {
+		font-size: 1.5rem;
+	}
+  .section-one {
+    height: 60vh;
+  }
+  .signupbtn {
+    padding: 2vw 5vw;
+    border-radius: 2vw;
+  }
+  .calltoaction > div:first-of-type {
+    margin-bottom: 2vw;
+  }
+  footer img {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+/* CSS Debug
 * {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
+} */
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 0.5vw;
+}
+::-webkit-scrollbar-track {
+  background: #27272a;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
