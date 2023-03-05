@@ -211,6 +211,9 @@ footer img:hover {
   .calltoaction > div:first-of-type {
     margin-bottom: 2vw;
   }
+  footer {
+    padding: 4vw;
+  }
   footer img {
     width: 4vw;
     height: 4vw;
