@@ -188,14 +188,25 @@ footer img:hover {
 		gap: 3vw;
 	}
 	.logo-title {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
+  .icon {
+    width: 5vw;
+    height: 5vw;
+  }
   .section-one {
     height: 60vh;
   }
   .signupbtn {
     padding: 2vw 5vw;
     border-radius: 2vw;
+  }
+  .quote {
+    padding: 10vw;
+  }
+  .calltoaction {
+    margin: 15vw 3vw;
+    font-size: 0.7rem;
   }
   .calltoaction > div:first-of-type {
     margin-bottom: 2vw;
