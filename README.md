@@ -1,6 +1,6 @@
 # Landing Page Project
 
-- [Live](https://vkilng.github.io/micro-turbines/)
+- [Live](https://vkilng.github.io/landing-page/)
 
 - A Landing Page for a community of micro-gas turbine hobbyists.
 
